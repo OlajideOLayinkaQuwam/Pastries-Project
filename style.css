@@ -69,11 +69,14 @@ body{
       text-align: center;
       font-size: 2rem;
       color: var(--footer-text);
+		font-weight:900;
     }
 
 		/* Air */
 svg{
 	width: 70rem;
+	font-weight:900;
+
 }
 		svg text{
 			font-size: 10rem;
@@ -1266,11 +1269,11 @@ z-index: 10000;
 }
 
 	.loader-container h2{
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 svg text{
-  font-size: 7rem;
+  font-size:8rem;
 }
 .wrapper-2 p{
   font-size: 3rem;
@@ -1478,6 +1481,9 @@ body{
       font-size: 2.3rem;
     }
 
+.loader-container h2{
+  font-size: 1.2rem;
+}
     .wrapper-2 span{
       font-size: 2rem;
     }
@@ -1608,6 +1614,7 @@ html{
   left: 25rem;
 }
 }
+
 
 
 
