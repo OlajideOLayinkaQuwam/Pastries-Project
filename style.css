@@ -85,8 +85,7 @@ svg{
 		svg text.text-body{
               stroke: var(--accent-color);
 			  animation: 14s infinite alternate animate-stroke;
-			  /* this means the dashes have 10px width and  in between the gap we have 32% */
-			  /* stroke-dasharray: 10px 20px; */
+			
 		}
 
      @keyframes animate-stroke{
@@ -95,12 +94,7 @@ svg{
 				stroke: var(--footer-text);
 				stroke: var(--footer-text);
 				stroke-width: 3;
-
-				/* stroke-dashoffset:  means the starting point of the dashes that is whats it is defining; */
 				stroke-dashoffset: 25%;
-				/* stroke-dasharray: is an attribute that defines the 
-				pattern of stroke-dashoffset and gap width
-				 gap used to create the outline of our text */
 				stroke-dasharray: 0 32%;
 			}
 			50%{
@@ -521,21 +515,7 @@ color: var(---menu-links-text);
       }
 
       .wrapper .content ol li {
-        /* we give step(7) because the total number of line is 7 */
-        /* calc(7*4*2)  the 4 is the time duration we give in typing animation*/
-
-        /*  so assuming we are increasing the  number of line 
-        ton 8 so would have to change  everything to 8 calc(8*5*2)   steps(8) and also the
-        slide animation  
         
-        
-    100%{
-                /* transform: translateY(-800%);
-
-    } 
-        
-        
-        */
         will-change: animation, translate, width;
         animation: slide calc(6 * 4 * 2s) steps(6) infinite;
       }
@@ -616,15 +596,7 @@ color: var(---menu-links-text);
   20%, 30% { opacity: 1; transform: translateX(-20%); }
   45%, 100% { opacity: 0; transform: translateX(-100% )}
 }
-/* @keyframes slideShow { */
-  /* come in */
- /* 0%,10% { opacity: 0; transform: translateX(100%); }   */
- 
- 
 
-
-
-/* Set different animation delays */
 
 .slide1 { animation-delay: 0s; }
 .slide2 { animation-delay: 4s; }
@@ -846,7 +818,7 @@ border-radius: 5px;
  
   display: grid;
   grid-gap: 50px;
-  grid-template-areas: "first first . ." "first first . ."; /* means in the first row one we will have one big image and two smaller image and in the second row  we will get the same */
+  grid-template-areas: "first first . ." "first first . ."; 
   margin: 20px 0;
   
 }
@@ -1156,34 +1128,6 @@ width: 23vw;
 
 
 }
-
-
-
-/* 49.0625 x 16 =785px */
-/* 
-@media only screen and (max-width:49.0625rem) {
-.wrapper a,.cta a{
-  width: 40vw;
-}
-
-
-.cta{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-}
-
-.cta h3{
-  font-size: 5vw;
-}
-
-
-
-} */
-
-
-
 
 /* 44.7rem x 16 = 715.2 */
 @media only screen and (max-width:44.7rem) {
@@ -1636,7 +1580,7 @@ html{
 
 
      .image-slider{
-  margin-top: 17rem;
+  margin-top: 11rem;
   
  }
 
@@ -1664,6 +1608,7 @@ html{
   left: 25rem;
 }
 }
+
 
 
 
