@@ -42,26 +42,6 @@ html{
 
 
 
-  
-
-
-/* 
-
-     --drop-down-container:#1a1a1a;
-    --dark-mode-button-hover:#ffd8a0;
-    --nav-color:#ffff;
-    --nav-links-hover:#ff7a00;
-    --nav-border-color:#1f1f1f;
-    --nav-bg-color:#002b5b;
-    --secondary-button:#2c2c2c;
-    --accent-color:#00b3ff;
-
-    --links:#00b3ff;
-    --footer-bg:#0a0a0a;
-    --footer-text:#ccc;
-    --border:#333;
-     --container-bg:#1e1e1e;
-    --hover-links:#ffa733;   */
 }
 
 body{
@@ -79,6 +59,8 @@ body{
 			z-index: 999;
 			background-color: var(--footer-bg);
 			display: grid;
+	        align-items:center;
+	        justify-content:center;
 			place-content: center;
 			transition: opacity .4s ease-in-out, visibility .4s ease-in-out;
 		}
@@ -639,13 +621,7 @@ color: var(---menu-links-text);
  /* 0%,10% { opacity: 0; transform: translateX(100%); }   */
  
  
- /* wait a little */
-   /* 15%,25% { opacity: 1; transform: translateX(0); } */
 
-
-  /* go away */
-  /* 35%, 100% { opacity: 0; transform: translateX(-100% )} */
-/* } */
 
 
 /* Set different animation delays */
@@ -732,7 +708,7 @@ color: var(---menu-links-text);
 .cta {
   margin: 8rem 0;
   background-image: linear-gradient(to right, #3f2321, transparent),
-    url(images/call.jpg);
+    url(call.jpg);
     object-fit: cover;
     height: 70vh;
   background-size: cover;
@@ -1215,7 +1191,7 @@ width: 23vw;
 
   .menu-bar svg{
   display: inline-block;
-  padding-left: 2rem;
+  padding-left: 30rem;
   transition: fill 0.6s;
   
 }
@@ -1272,7 +1248,7 @@ z-index: 10000;
 }
 
     .nav-links.active {
-      transform: translateX(0);
+      transform: translateX(30vw);
     }
 
     .nav-links.hide {
@@ -1343,6 +1319,14 @@ z-index: 10000;
     margin-left:2rem ;
     
 
+}
+
+	.loader-container h2{
+  font-size: 1rem;
+}
+
+svg text{
+  font-size: 7rem;
 }
 .wrapper-2 p{
   font-size: 3rem;
@@ -1540,6 +1524,12 @@ body{
 
 @media only screen and (max-width:29.9rem) {
 
+
+
+	  .nav-links{
+    width: 25vh;
+    margin-right: 20rem;
+  }
     .wrapper-2 p{
       font-size: 2.3rem;
     }
@@ -1553,6 +1543,11 @@ body{
  }
 
  
+   .menu-bar svg{
+ 
+  padding-left: 20rem;
+  
+}
         .exclusive div span{
           display: flex;
           flex-direction: column;
@@ -1634,15 +1629,6 @@ html{
 
 
 
-/* 
-.trending div:first-child img,.trending div:nth-child(4) img{
-  width: 600px;
-}
-
-} */
-
-/* 24.4 x 16 = 390 */
-
 @media only screen and (max-width:24.4rem) {
 html{
   font-size: 55%;
@@ -1666,14 +1652,19 @@ html{
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      left: 0;
+      
     }
     .contact-us{
       width: 20rem;
       text-align: center;
       padding-left: 10px;
     }
+
+	    .stories p {
+  left: 25rem;
 }
+}
+
 
 
 
